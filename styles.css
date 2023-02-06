@@ -1,0 +1,163 @@
+@font-face {
+  font-family: pixelVisitor;
+  src: url(visitor1.ttf);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("dawnbackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "pixelVisitor";
+  min-height: 100vh;
+}
+
+header {
+  font-size: 2rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  font-family: "pixelVisitor";
+  height: 3.3rem;
+}
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: #ead7c3;
+  outline: none;
+}
+form button {
+  color: #a984ff;
+  background: #ead7c3;
+  cursor: crosshair;
+  transition: all 0.5s ease;
+}
+
+form button:hover {
+  background: #a984ff;
+  color: #ead7c3;
+}
+
+.todoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todoList {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: #ead7c3;
+  color: black;
+  font-size: 1.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: all 0.5s ease;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.todoDelete,
+.todoCheck {
+  color: #ead7c3;
+
+  border: none;
+  padding: 1rem;
+  cursor: crosshair;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+}
+.todoDelete {
+  background: #8a8583;
+}
+.todoCheck {
+  background: #a7727d;
+}
+.todoDelete:hover {
+  background: #ead7c3;
+  color: #8a8583;
+}
+.todoCheck:hover {
+  background: #ead7c3;
+  color: #a7727d;
+}
+.todoItem {
+  padding: 0rem 0.5rem;
+}
+
+.fa-check,
+.fa-trash-can {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(-5rem) rotateZ(10deg);
+  opacity: 0;
+}
+
+select {
+  appearance: none;
+  outline: none;
+  border: none;
+  font-family: "pixelVisitor";
+  font-size: 1.5rem;
+  color: #a984ff;
+  background: #ead7c3;
+  cursor: crosshair;
+  width: 10rem;
+
+  padding: 0.7rem;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: #a984ff;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  transition: all 0.5 ease;
+}
+
+.select:hover::after {
+  background: #ead7c3;
+}

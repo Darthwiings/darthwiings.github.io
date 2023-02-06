@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel ToDo</title>
+    <script
+      src="https://kit.fontawesome.com/2cd3e29703.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>To-Do list</h1>
+    </header>
+
+    <form>
+      <input type="text" class="todoInput" />
+      <button class="todoButton" type="submit">
+        <i class="fa-solid fa-square-plus"></i>
+      </button>
+      <div class="select">
+        <select name="todos" class="filterTodo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+        </select>
+      </div>
+    </form>
+
+    <div class="todoContainer">
+      <ul class="todoList"></ul>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
